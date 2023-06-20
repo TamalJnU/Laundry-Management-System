@@ -1,0 +1,62 @@
+<div class="container">
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+
+          <div class="preview-pic tab-content">
+            <div class="tab-pane active" id="pic-1"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></div>
+            <div class="tab-pane" id="pic-2"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></div>
+            <div class="tab-pane" id="pic-3"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></div>
+            <div class="tab-pane" id="pic-4"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></div>
+            <div class="tab-pane" id="pic-5"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></div>
+          </div>
+          <ul class="preview-thumbnail nav nav-tabs">
+            <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></a></li>
+            <li><a data-target="#pic-2" data-toggle="tab"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></a></li>
+            <li><a data-target="#pic-3" data-toggle="tab"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></a></li>
+            <li><a data-target="#pic-4" data-toggle="tab"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></a></li>
+            <li><a data-target="#pic-5" data-toggle="tab"><img src="https://m.media-amazon.com/images/I/71Yu1d-eZ0L._UL1500_.jpg" /></a></li>
+          </ul>
+
+        </div>
+        <div class="details col-md-6 form-group" for="name" style="color: black;">
+          <h3 class="product-title" id="name" formControlName="name" value="Baby Dress Dry Clean">Baby Dress Dry Cleaning</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">41 reviews</span>
+          </div>
+          <p class="product-description" style="color: cadetblue;">Exotic dry clean with due time and low cost</p>
+          <div class="form-group" for="unitprice"><h4 class="price" id="unitprice" formControlName="unitprice" value="50">price: <span>$50</span></h4></div>
+          <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+          <h5 class="sizes">Pieces:
+
+              <div class="input form-group" for="piece">
+                <input type="number" id="piece" formControlName="piece"/>
+              </div>
+
+          </h5>
+          <h5 class="colors">Total Price:
+            <div><input type="text" disabled/></div>
+          </h5>
+          <div class="action">
+            <button class="add-to-cart btn btn-default" type="submit"><a routerLink="/home/cart" href="#">add to cart</a></button>&nbsp;
+            <button class="order btn btn-default" type="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </form>
+
+</div>

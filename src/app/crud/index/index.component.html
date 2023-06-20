@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>User's Information</h2>
+  <a href="#" routerLink="/crud" class="btn btn-success">Back to Register</a>
+  <br>
+  <table border="2" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Mobile</th>
+        <th>Street</th>
+        <th>Colony</th>
+        <th>Thana</th>
+        <th>District</th>
+        <th>Post</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+      <tr *ngFor="let v of indexList">
+        <td>{{v.id}}</td>
+        <td>{{v.name}}</td>
+        <td>{{v.gender}}</td>
+        <td>{{v.mobile}}</td>
+        <td>{{v.street}}</td>
+        <td>{{v.colony}}</td>
+        <td>{{v.thana}}</td>
+        <td>{{v.district}}</td>
+        <td>{{v.post}}</td>
+        <td>{{v.email}}</td>
+        <td>{{v.password}}</td>
+        <td>
+          <a href="#" [routerLink]="['/crud/', v.id, 'view']" class="btn btn-primary">View</a>
+          <a href="#" [routerLink]="['/crud/', v.id, 'edit']" class="btn btn-info">Edit</a>
+          <button type="button" class="btn btn-primary" (click)="delete(v.id)">Delete</button>
+        </td>
+      </tr>
+  </table>
+</div>

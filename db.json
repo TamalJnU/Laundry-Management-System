@@ -1,0 +1,57 @@
+{
+  "sign-up": [
+    {
+      "id": 1,
+      "name": "Selim Mahmud",
+      "gender": "Male",
+      "mobile": "01789456123",
+      "street": "2/A",
+      "colony": "Fokirapul",
+      "thana": "Paltan",
+      "district": "Dhaka",
+      "post": "1111",
+      "email": "selim@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "MD. MOHON ALI",
+      "gender": "Male",
+      "mobile": "01641572020",
+      "street": "8/A",
+      "colony": "Kaderabad Housing",
+      "thana": "Mohammadpur",
+      "district": "Dhaka",
+      "post": "1122",
+      "email": "amohon007@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "Russel Pathan",
+      "gender": "Male",
+      "mobile": "01641572020",
+      "street": "2222",
+      "colony": "Kaderabad Housing",
+      "thana": "Mohammadpur",
+      "district": "Rajshahi",
+      "post": "1122",
+      "email": "russel@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "dry-clean": [
+    {
+      "id": 1,
+      "name": "",
+      "piece": "",
+      "perunit": ""
+    },
+    {
+      "id": 2,
+      "name": "",
+      "piece": "",
+      "perunit": ""
+    }
+  ]
+}
